@@ -1,0 +1,45 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+body { background-color: #f0f2f5; padding: 20px; color: #333; }
+.container { max-width: 900px; margin: auto; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+h1 { text-align: center; margin-bottom: 25px; color: #1a73e8; }
+
+.header-actions { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 15px; border-bottom: 2px solid #eee; }
+.stats { display: flex; gap: 20px; font-weight: bold; }
+.text-success { color: #28a745; }
+.text-danger { color: #dc3545; }
+
+/* Nút bấm */
+.btn { padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; color: white; font-weight: bold; transition: 0.2s; }
+.btn-primary { background-color: #1a73e8; }
+.btn-primary:hover { background-color: #1557b0; }
+.btn-success { background-color: #28a745; }
+.btn-secondary { background-color: #6c757d; }
+.btn-warning { background-color: #ffc107; color: #333; }
+.btn-danger { background-color: #dc3545; }
+
+/* Danh sách công việc dạng Card */
+.task-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+.task-card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: 0.3s; }
+.task-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.15); }
+.task-card h3 { margin-bottom: 10px; color: #333; }
+.task-card p { font-size: 14px; margin-bottom: 5px; color: #555; }
+.task-badge { display: inline-block; padding: 3px 8px; border-radius: 12px; font-size: 12px; font-weight: bold; margin-bottom: 10px; }
+.badge-cao { background: #ffeeba; color: #856404; }
+.badge-binh-thuong { background: #d1ecf1; color: #0c5460; }
+.badge-thap { background: #e2e3e5; color: #383d41; }
+.task-actions { margin-top: 15px; display: flex; gap: 10px; border-top: 1px solid #eee; padding-top: 10px; }
+
+/* Trạng thái hoàn thành */
+.task-card.completed { background-color: #f8f9fa; opacity: 0.7; }
+.task-card.completed h3 { text-decoration: line-through; color: #6c757d; }
+
+/* Modal Popup */
+.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); display: flex; justify-content: center; align-items: center; }
+.modal.hidden { display: none; }
+.modal-content { background: white; padding: 25px; border-radius: 8px; width: 450px; box-shadow: 0 5px 20px rgba(0,0,0,0.3); }
+.modal-content h2 { margin-bottom: 20px; text-align: center; }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+.form-group input, .form-group textarea, .form-group select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; outline: none; }
+.form-group input:focus, .form-group textarea:focus { border-color: #1a73e8; }
+.modal-actions { display: flex; justify-content: space-between; margin-top: 20px; }
